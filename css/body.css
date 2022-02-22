@@ -86,3 +86,10 @@
 .text-center {
     text-align: center;
 }
+ 
+.Logo {
+     position: absolute;
+     top: 70px;
+     left: 200px;
+     }
+     
