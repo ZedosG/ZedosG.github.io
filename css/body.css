@@ -32,6 +32,48 @@
 .xs-block{
     display: none;
 }
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container.flex.small-screen {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container.grid-small-screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-space {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* || Desktop screen */
+@media screen and (min-width: 700px) {
+    .container.flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container.flex .text-section {
+        flex: 1;
+        margin-right: 5px;
+    }
+
+    .container.flex .image-section {
+        flex: 1;
+        margin-left: 5px;
+    }
 
 .display-header{
     display: none;
